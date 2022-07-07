@@ -1,2 +1,14 @@
 ---
-# tasks file for ansible_role_essential_tools
+- name: Run the equivalent of "pacman -Syu" as a separate step.
+  pacman:
+    update_cache: true
+    upgrade: true
+  become: true
+
+- name: Install essential pacman packages.
+  pacman:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - "{{ pacman_package_list }}"
+  become: true

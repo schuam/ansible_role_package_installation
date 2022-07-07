@@ -1,2 +1,11 @@
 ---
-# vars file for ansible_role_essential_tools
+pacman_package_list:
+  - alacritty
+  - bash-completion
+  - git
+  - gzip
+  - make
+  - neovim
+  - tmux
+  - unzip
+  - zip
