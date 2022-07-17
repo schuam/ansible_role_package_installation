@@ -1,2 +1,8 @@
 ---
-# defaults file for ansible_role_essential_tools
+install_bluetooth_packages: true
+install_browser_packages: true
+install_essential_packages: true
+install_multimedia_packages: true
+install_network_packages: true
+install_python_packages: true
+install_x-related_packages: true

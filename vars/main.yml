@@ -1,5 +1,24 @@
 ---
-pacman_package_list:
+package_types:
+  - bluetooth
+  - browser
+  - essential
+  - multimedia
+  - network
+  - python
+  - x-related
+
+list_of_bluetooth_packages:
+  - blueman
+  - bluez
+  - bluez-utils
+
+list_of_browser_packages:
+  - chromium
+  - firefox
+  - qutebrowser
+
+list_of_essential_packages:
   - alacritty
   - bash-completion
   - git
@@ -8,4 +27,44 @@ pacman_package_list:
   - neovim
   - tmux
   - unzip
+  - vifm
   - zip
+
+list_of_multimedia_packages:
+  - digikam
+  - mpv
+  - pavucontrol
+  - pulseaudio
+  - pulseaudio-alsa
+  - pulseaudio-bluetooth
+  - sxiv
+  - ueberzug
+  - zathura
+  - zathura-djvu
+  - zathura-pdf-poppler
+  - zathura-ps
+
+list_of_network_packages:
+  - inetutils
+  - network-manager-applet
+  - networkmanager
+  - networkmanager-openvpn
+  - openssh
+
+list_of_python_packages:
+  - python-black
+  - python-matplotlib
+  - python-netaddr
+  - python-numpy
+  - python-pandas
+  - python-pip
+  - python-pylint
+  - python-pynvim
+  - python-scipy
+  - python-xvfbwrapper
+  - python-yaml
+
+list_of_x-related_packages:
+  - xf86-video-intel
+  - xmobar
+  - xorg
