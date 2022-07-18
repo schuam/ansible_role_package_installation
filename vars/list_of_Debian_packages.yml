@@ -1,0 +1,84 @@
+---
+package_types:
+  - bluetooth
+  - browser
+  - essential
+  - multimedia
+  - network
+  - python
+  - x-related
+
+list_of_bluetooth_packages:
+  - blueman
+  - bluez
+  - bluez-cups
+  - bluez-obexd
+
+list_of_browser_packages:
+# TODO: chromium is not available in the official ubuntu packages. Therefore, I
+#       have to install it differently.
+#   - chromium
+  - firefox
+  - qutebrowser
+
+list_of_essential_packages:
+# TODO: alacritty is not in the official ubuntu packages. Therefore, I will
+# have to find a good ppa to install it from.
+#   - alacritty
+  - bash-completion
+  - git
+  - gzip
+  - make
+  - neovim
+  - tmux
+  - unzip
+# TODO: Check if my configuration for vifm works without sxiv and ueberzug?
+  - vifm
+  - zip
+
+list_of_multimedia_packages:
+# TODO: The following packages are not in the official ubuntu packages.
+# Therefore, I will have to find a good ppa to install it from.
+# - pulseaudio-also
+# - pulseaudio-bluetooth
+# - ueberzug
+  - digikam
+  - mpv
+  - pavucontrol
+  - pulseaudio
+#   - pulseaudio-alsa
+#   - pulseaudio-bluetooth
+  - sxiv
+#   - ueberzug
+  - zathura
+  - zathura-djvu
+  - zathura-pdf-poppler
+  - zathura-ps
+
+list_of_network_packages:
+  - inetutils*
+  - network-manager
+  - network-manager-gnome
+  - network-manager-openvpn
+
+list_of_python_packages:
+# TODO: Check if I need python-pynvim for neovim. I might have to install it
+# with my essential packages.
+  - black
+  - pylint
+  - python3-matplotlib
+  - python3-netaddr
+  - python3-numpy
+  - python3-pandas
+  - python3-pip
+  - python3-pynvim
+  - python3-scipy
+  - python3-xvfbwrapper
+  - python3-yaml
+
+list_of_x-related_packages:
+# TODO: xf86-video-intel is not in the offical ubuntu packages. Therefore, I
+# will have to check if I actually need it and if so, how to install it.
+#   - xf86-video-intel
+  - xmobar
+  - xorg
