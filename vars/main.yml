@@ -1,0 +1,10 @@
+---
+package_types:
+  - bluetooth
+  - browser
+  - essential
+  - multimedia
+  - network
+  - python
+  - x-related
+
