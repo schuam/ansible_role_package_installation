@@ -1,16 +1,6 @@
 ---
-- name: Run the equivalent of "pacman -Syu" as a separate step.
-  pacman:
-    update_cache: true
-    upgrade: true
-  become: true
+- name: Include OS-specific variables.
+  include_vars: list_of_{{ ansible_os_family }}_packages.yml
 
-- name: Install pacman packages.
-  pacman:
-    name: "{{ lookup('ansible.builtin.vars', 'list_of_' + type + '_packages', default='') }}"
-    state: present
-  when: lookup('ansible.builtin.vars', 'install_' + type + '_packages', default='false') is truthy(convert_bool=True)
-  loop: "{{ package_types }}"
-  loop_control:
-    loop_var: type
-  become: true
+- name: Include OS-specific tasks.
+  include_tasks: install_{{ ansible_os_family }}_packages.yml
