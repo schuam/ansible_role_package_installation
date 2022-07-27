@@ -17,6 +17,7 @@ list_of_essential_packages:
 # have to find a good ppa to install it from.
 #   - alacritty
   - bash-completion
+  - build-essential
   - git
   - gzip
   - make

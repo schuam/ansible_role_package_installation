@@ -11,6 +11,7 @@ list_of_browser_packages:
 
 list_of_essential_packages:
   - alacritty
+  - base-devel
   - bash-completion
   - git
   - gzip
