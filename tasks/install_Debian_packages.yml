@@ -1,8 +1,8 @@
 ---
-# - name: Run the equivalent of "apt update" as a separate step.
-#   apt:
-#     update_cache: true
-#   become: true
+- name: Run the equivalent of "apt update" as a separate step.
+  apt:
+    update_cache: true
+  become: true
 
 - name: Install apt packages.
   apt:
