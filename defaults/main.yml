@@ -6,3 +6,7 @@ install_multimedia_packages: true
 install_network_packages: true
 install_python_packages: true
 install_x-related_packages: true
+
+# The following variables are relevant for Ubuntu
+install_browser_snap_packages: true
+install_essential_snap_packages: true
