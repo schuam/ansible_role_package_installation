@@ -25,3 +25,16 @@
     loop_var: type
   become: true
 
+
+# - name: Gather package facts.
+#   package_facts:
+#     manager: apt
+#
+# - name: Debugging.
+#   debug:
+#     var: ansible_facts.packages["neovim"][0]["version"]
+#
+# - include_tasks: install_neovim.yml
+#   when: '"neovim" not in ansible_facts.packages
+#         or ansible_facts.packages["neovim"][0]["version"]
+#         is version(neovim_minimal_required_version, "<")'

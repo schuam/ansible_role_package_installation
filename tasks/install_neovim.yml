@@ -1,0 +1,12 @@
+---
+- name: Download released neovim deb package.
+  get_url:
+    url: "{{ neovim_deb_download_url }}"
+    dest: "{{ neovim_deb_download_path }}"
+    checksum: "{{ neovim_deb_downlaod_sha256 }}"
+
+- name: Install neovim deb package.
+  apt:
+    deb: "{{ neovim_deb_download_path }}"
+  become: true
+

@@ -8,3 +8,10 @@ package_types:
   - python
   - x-related
 
+neovim_minimal_required_version: "0.7.0"
+neovim_deb_package_name: "nvim-linux64.deb"
+neovim_deb_download_dir: "/tmp"
+neovim_deb_download_path: "{{ neovim_deb_download_dir }}/{{ neovim_deb_package_name }}"
+neovim_deb_download_url: "https://github.com/neovim/neovim/releases/download/v0.7.2/{{ neovim_deb_package_name }}"
+neovim_deb_downlaod_sha256: "sha256:dce77cae95c2c115e43159169e2d2faaf93bce6862d5adad7262f3aa3cf60df8"
+
