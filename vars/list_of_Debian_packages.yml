@@ -6,22 +6,15 @@ list_of_bluetooth_packages:
   - bluez-obexd
 
 list_of_browser_packages:
-# TODO: chromium is not available in the official ubuntu packages. Therefore, I
-#       have to install it differently.
-#   - chromium
   - firefox
   - qutebrowser
 
 list_of_essential_packages:
-# TODO: alacritty is not in the official ubuntu packages. Therefore, I will
-# have to find a good ppa to install it from.
-#   - alacritty
   - bash-completion
   - build-essential
   - git
   - gzip
   - make
-  - neovim
   - tmux
   - unzip
 # TODO: Check if my configuration for vifm works without sxiv and ueberzug?
@@ -30,16 +23,17 @@ list_of_essential_packages:
 
 list_of_multimedia_packages:
 # TODO: The following packages are not in the official ubuntu packages.
-# Therefore, I will have to find a good ppa to install it from.
-# - pulseaudio-also
-# - pulseaudio-bluetooth
+#       That's why I can't install them as on Arch. I  might actually not need
+#       pulseaudio-alsa, but I will have to try that later. ueberzug might have
+#       to be installed via pip. And I don't know yet, if I want to do that.
+# - pulseaudio-alsa
 # - ueberzug
   - digikam
   - mpv
   - pavucontrol
   - pulseaudio
 #   - pulseaudio-alsa
-#   - pulseaudio-bluetooth
+  - pulseaudio-module-bluetooth
   - sxiv
 #   - ueberzug
   - zathura
@@ -74,3 +68,11 @@ list_of_x-related_packages:
 #   - xf86-video-intel
   - xmobar
   - xorg
+
+list_of_essential_snap_packages:
+  - alacritty
+  - nvim
+
+list_of_browser_snap_packages:
+  - chromium
+  - chromium-ffmpeg

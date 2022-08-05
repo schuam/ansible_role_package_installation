@@ -14,3 +14,14 @@
     loop_var: type
   become: true
 
+- name: Install snap packages.
+  snap:
+    name: "{{ lookup('ansible.builtin.vars', 'list_of_' + type + '_snap_packages', default='') }}"
+    state: present
+    classic: true
+  when: lookup('ansible.builtin.vars', 'install_' + type + '_snap_packages', default='false') is truthy(convert_bool=True)
+  loop: "{{ package_types }}"
+  loop_control:
+    loop_var: type
+  become: true
+
