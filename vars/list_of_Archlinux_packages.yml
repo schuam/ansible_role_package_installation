@@ -17,6 +17,7 @@ list_of_essential_packages:
   - gzip
   - make
   - neovim
+  - python-pynvim
   - tmux
   - unzip
   - vifm
@@ -51,7 +52,6 @@ list_of_python_packages:
   - python-pandas
   - python-pip
   - python-pylint
-  - python-pynvim
   - python-scipy
   - python-xvfbwrapper
   - python-yaml

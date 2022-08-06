@@ -15,6 +15,7 @@ list_of_essential_packages:
   - git
   - gzip
   - make
+  - python3-pynvim
   - tmux
   - unzip
 # TODO: Check if my configuration for vifm works without sxiv and ueberzug?
@@ -48,8 +49,6 @@ list_of_network_packages:
   - network-manager-openvpn
 
 list_of_python_packages:
-# TODO: Check if I need python-pynvim for neovim. I might have to install it
-# with my essential packages.
   - black
   - pylint
   - python3-matplotlib
@@ -57,7 +56,6 @@ list_of_python_packages:
   - python3-numpy
   - python3-pandas
   - python3-pip
-  - python3-pynvim
   - python3-scipy
   - python3-xvfbwrapper
   - python3-yaml
