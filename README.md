@@ -80,7 +80,7 @@ None
 
     - hosts: localhost
       roles:
-         - { role: schuam.package-installation }
+         - { role: schuam.package_installation }
 
 
 ## License
