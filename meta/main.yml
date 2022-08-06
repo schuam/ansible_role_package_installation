@@ -1,3 +1,4 @@
+---
 galaxy_info:
   role_name: package_installation
   author: Andreas Schuster
@@ -5,12 +6,12 @@ galaxy_info:
   license: license (MIT)
   min_ansible_version: 2.13
   platforms:
-  - name: Arch Linux
-    versions:
-    - all
-  - name: Ubuntu
-    versions:
-    - all
+    - name: Arch Linux
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
 
   galaxy_tags:
     - linux

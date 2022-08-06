@@ -1,6 +1,6 @@
 ---
 - name: Include OS-specific variables.
-  include_vars: list_of_{{ ansible_os_family }}_packages.yml
+  ansible.builtin.include_vars: list_of_{{ ansible_os_family }}_packages.yml
 
 - name: Include OS-specific tasks.
-  include_tasks: install_{{ ansible_os_family }}_packages.yml
+  ansible.builtin.include_tasks: install_{{ ansible_os_family }}_packages.yml

@@ -1,32 +1,56 @@
 ---
 - name: Run the equivalent of "apt update" as a separate step.
-  apt:
+  ansible.builtin.apt:
     update_cache: true
   become: true
 
 - name: Install apt packages.
-  apt:
-    name: "{{ lookup('ansible.builtin.vars', 'list_of_' + type + '_packages', default='') }}"
+  ansible.builtin.apt:
+    name:
+      "{{ \
+        lookup(\
+          'ansible.builtin.vars',\
+          'list_of_' + type + '_packages',\
+          default=''\
+        ) \
+      }}"
     state: present
-  when: lookup('ansible.builtin.vars', 'install_' + type + '_packages', default='false') is truthy(convert_bool=True)
+  when: >-
+    lookup(
+      'ansible.builtin.vars',
+      'install_' + type + '_packages',
+      default='false'
+    ) is truthy(convert_bool=True)
   loop: "{{ package_types }}"
   loop_control:
     loop_var: type
   become: true
 
 - name: Install snap packages.
-  snap:
-    name: "{{ lookup('ansible.builtin.vars', 'list_of_' + type + '_snap_packages', default='') }}"
+  community.general.snap:
+    name:
+      "{{ \
+        lookup(\
+          'ansible.builtin.vars',\
+          'list_of_' + type + '_snap_packages',\
+          default=''\
+        ) \
+      }}"
     state: present
     classic: true
-  when: lookup('ansible.builtin.vars', 'install_' + type + '_snap_packages', default='false') is truthy(convert_bool=True)
+  when: >-
+    lookup(
+      'ansible.builtin.vars',
+      'install_' + type + '_snap_packages',
+      default='false'
+    ) is truthy(convert_bool=True)
   loop: "{{ package_types }}"
   loop_control:
     loop_var: type
   become: true
 
 - name: Install dependencies of ueberzug.
-  apt:
+  ansible.builtin.apt:
     name: "{{ list_of_ueberzug_dependencies }}"
     state: present
   when: install_multimedia_pip_packages is truthy(convert_bool=True)
@@ -34,11 +58,23 @@
 
 
 - name: Install pip packages.
-  pip:
+  ansible.builtin.pip:
     executable: pip3
-    name: "{{ lookup('ansible.builtin.vars', 'list_of_' + type + '_pip_packages', default='') }}"
+    name:
+      "{{ \
+        lookup(\
+          'ansible.builtin.vars',\
+          'list_of_' + type + '_pip_packages',\
+          default=''\
+        ) \
+      }}"
     state: present
-  when: lookup('ansible.builtin.vars', 'install_' + type + '_pip_packages', default='false') is truthy(convert_bool=True)
+  when: >-
+    lookup(
+      'ansible.builtin.vars',
+      'install_' + type + '_pip_packages',
+      default='false'
+    ) is truthy(convert_bool=True)
   loop: "{{ package_types }}"
   loop_control:
     loop_var: type
