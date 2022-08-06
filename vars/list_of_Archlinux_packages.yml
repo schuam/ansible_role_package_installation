@@ -57,6 +57,5 @@ list_of_python_packages:
   - python-yaml
 
 list_of_x-related_packages:
-  - xf86-video-intel
   - xmobar
   - xorg
