@@ -70,3 +70,10 @@ list_of_essential_snap_packages:
 list_of_browser_snap_packages:
   - chromium
   - chromium-ffmpeg
+
+list_of_multimedia_pip_packages:
+  - ueberzug
+
+list_of_ueberzug_dependencies:
+  - libx11-dev
+  - libxext-dev

@@ -25,3 +25,21 @@
     loop_var: type
   become: true
 
+- name: Install dependencies of ueberzug.
+  apt:
+    name: "{{ list_of_ueberzug_dependencies }}"
+    state: present
+  when: install_multimedia_pip_packages is truthy(convert_bool=True)
+  become: true
+
+
+- name: Install pip packages.
+  pip:
+    executable: pip3
+    name: "{{ lookup('ansible.builtin.vars', 'list_of_' + type + '_pip_packages', default='') }}"
+    state: present
+  when: lookup('ansible.builtin.vars', 'install_' + type + '_pip_packages', default='false') is truthy(convert_bool=True)
+  loop: "{{ package_types }}"
+  loop_control:
+    loop_var: type
+  become: true

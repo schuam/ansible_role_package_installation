@@ -10,3 +10,5 @@ install_x-related_packages: true
 # The following variables are relevant for Ubuntu
 install_browser_snap_packages: true
 install_essential_snap_packages: true
+
+install_multimedia_pip_packages: true
