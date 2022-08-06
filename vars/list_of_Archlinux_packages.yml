@@ -1,0 +1,61 @@
+---
+list_of_bluetooth_packages:
+  - blueman
+  - bluez
+  - bluez-utils
+
+list_of_browser_packages:
+  - chromium
+  - firefox
+  - qutebrowser
+
+list_of_essential_packages:
+  - alacritty
+  - base-devel
+  - bash-completion
+  - git
+  - gzip
+  - make
+  - neovim
+  - python-pynvim
+  - tmux
+  - unzip
+  - vifm
+  - zip
+
+list_of_multimedia_packages:
+  - digikam
+  - mpv
+  - pavucontrol
+  - pulseaudio
+  - pulseaudio-alsa
+  - pulseaudio-bluetooth
+  - sxiv
+  - ueberzug
+  - zathura
+  - zathura-djvu
+  - zathura-pdf-poppler
+  - zathura-ps
+
+list_of_network_packages:
+  - inetutils
+  - network-manager-applet
+  - networkmanager
+  - networkmanager-openvpn
+  - openssh
+
+list_of_python_packages:
+  - python-black
+  - python-matplotlib
+  - python-netaddr
+  - python-numpy
+  - python-pandas
+  - python-pip
+  - python-pylint
+  - python-scipy
+  - python-xvfbwrapper
+  - python-yaml
+
+list_of_x-related_packages:
+  - xmobar
+  - xorg

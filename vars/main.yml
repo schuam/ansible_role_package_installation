@@ -1,2 +1,10 @@
 ---
-# vars file for ansible_role_essential_tools
+package_types:
+  - bluetooth
+  - browser
+  - essential
+  - multimedia
+  - network
+  - python
+  - x-related
+

@@ -1,0 +1,16 @@
+---
+- name: Run the equivalent of "pacman -Syu" as a separate step.
+  pacman:
+    update_cache: true
+    upgrade: true
+  become: true
+
+- name: Install pacman packages.
+  pacman:
+    name: "{{ lookup('ansible.builtin.vars', 'list_of_' + type + '_packages', default='') }}"
+    state: present
+  when: lookup('ansible.builtin.vars', 'install_' + type + '_packages', default='false') is truthy(convert_bool=True)
+  loop: "{{ package_types }}"
+  loop_control:
+    loop_var: type
+  become: true

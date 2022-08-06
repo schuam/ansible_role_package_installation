@@ -1,2 +1,6 @@
 ---
-# tasks file for ansible_role_essential_tools
+- name: Include OS-specific variables.
+  include_vars: list_of_{{ ansible_os_family }}_packages.yml
+
+- name: Include OS-specific tasks.
+  include_tasks: install_{{ ansible_os_family }}_packages.yml
