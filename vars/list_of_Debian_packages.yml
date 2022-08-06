@@ -22,20 +22,12 @@ list_of_essential_packages:
   - zip
 
 list_of_multimedia_packages:
-# TODO: The following packages are not in the official ubuntu packages.
-#       That's why I can't install them as on Arch. I  might actually not need
-#       pulseaudio-alsa, but I will have to try that later. ueberzug might have
-#       to be installed via pip. And I don't know yet, if I want to do that.
-# - pulseaudio-alsa
-# - ueberzug
   - digikam
   - mpv
   - pavucontrol
   - pulseaudio
-#   - pulseaudio-alsa
   - pulseaudio-module-bluetooth
   - sxiv
-#   - ueberzug
   - zathura
   - zathura-djvu
   - zathura-pdf-poppler
