@@ -23,6 +23,11 @@ into groups:
   but also for example **xmobar** that I use in my **xmonad** configuration.
 
 
+So far it has only be tried on two virtual (vagrant) machines. There hasn't
+been any real testing. If I find the time to really test everything, I will do
+that, but for now, I just use it as it is.
+
+
 ## Requirements
 
 This role was written to setup Arch Linux and Ubuntu machine. I would think it
