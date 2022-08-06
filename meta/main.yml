@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: package-installation
+  role_name: package_installation
   author: Andreas Schuster
   description: Role to install packages on new laptops/desktop computers
   license: license (MIT)
