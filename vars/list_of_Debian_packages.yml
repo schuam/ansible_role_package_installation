@@ -51,7 +51,7 @@ list_of_python_packages:
   - python3-xvfbwrapper
   - python3-yaml
 
-list_of_x-related_packages:
+list_of_x_related_packages:
   - xmobar
   - xorg
 

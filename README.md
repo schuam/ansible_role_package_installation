@@ -19,7 +19,7 @@ into groups:
   don't like to install them with **pip** (I use pip only for virtual
   environments). Therefore these packages are also installed via the distro's
   package manager.
-- **x-related**: Packages related to the X server. Of corse **xorg** itself,
+- **x_related**: Packages related to the X server. Of corse **xorg** itself,
   but also for example **xmobar** that I use in my **xmonad** configuration.
 
 
@@ -54,7 +54,7 @@ in package\_types.
 - list_of_multimedia_packages
 - list_of_network_packages
 - list_of_python_packages
-- list_of_x-related_packages
+- list_of_x_related_packages
 
 In defaults/main.yml are the following boolean variables. They determine
 whether or not the packages that belong to a certain type are installed or not.
@@ -68,7 +68,7 @@ installation of these packages by overwriting the specific variable with
 - install_multimedia_packages: true
 - install_network_packages: true
 - install_python_packages: true
-- install_x-related_packages: true
+- install_x_related_packages: true
 
 
 ## Dependencies
