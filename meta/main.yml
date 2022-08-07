@@ -4,7 +4,7 @@ galaxy_info:
   author: Andreas Schuster
   description: Role to install packages on new laptops/desktop computers
   license: license (MIT)
-  min_ansible_version: 2.13
+  min_ansible_version: "2.13"
   platforms:
     - name: ArchLinux
       versions:
