@@ -2,6 +2,6 @@
 - name: Converge
   hosts: all
   tasks:
-    - name: "Include ansible_role_package_installation"
+    - name: "Include package_installation"
       include_role:
-        name: "ansible_role_package_installation"
+        name: "schuam.package_installation"
