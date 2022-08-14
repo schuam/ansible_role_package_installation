@@ -1,6 +1,7 @@
 ---
 galaxy_info:
   role_name: package_installation
+  namespace: schuam
   author: Andreas Schuster
   description: Role to install packages on new laptops/desktop computers
   license: license (MIT)
