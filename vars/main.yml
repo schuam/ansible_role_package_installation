@@ -1,5 +1,6 @@
 ---
 package_types:
+  - ansible
   - bluetooth
   - browser
   - essential
