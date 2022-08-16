@@ -67,4 +67,5 @@ list_of_python_packages:
 
 list_of_x_related_packages:
   - xmobar
+  - xmonad
   - xorg
