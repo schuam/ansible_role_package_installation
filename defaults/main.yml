@@ -1,4 +1,5 @@
 ---
+install_ansible_packages: true
 install_bluetooth_packages: true
 install_browser_packages: true
 install_essential_packages: true

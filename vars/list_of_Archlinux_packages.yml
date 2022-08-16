@@ -1,4 +1,13 @@
 ---
+list_of_ansible_packages:
+  - ansible
+  - ansible-core
+  - ansible-lint
+  - docker
+  - molecule
+  - molecule-docker
+  - yamllint
+
 list_of_bluetooth_packages:
   - blueman
   - bluez
