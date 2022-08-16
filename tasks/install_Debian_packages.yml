@@ -60,9 +60,8 @@
   ansible.builtin.apt:
     name: "{{ list_of_ueberzug_dependencies }}"
     state: present
-  when: install_multimedia_pip_packages is truthy(convert_bool=True)
+  when: install_multimedia_packages is truthy(convert_bool=True)
   become: true
-
 
 - name: Install pip packages.
   ansible.builtin.pip:
@@ -79,9 +78,14 @@
   when: >-
     lookup(
       'ansible.builtin.vars',
-      'install_' + type + '_pip_packages',
+      'install_' + type + '_packages',
       default='false'
-    ) is truthy(convert_bool=True)
+    ) is truthy(convert_bool=True) and
+    lookup(
+      'ansible.builtin.vars',
+      'list_of_' + type + '_pip_packages',
+      default=''
+    ) | length > 0
   loop: "{{ package_types }}"
   loop_control:
     loop_var: type

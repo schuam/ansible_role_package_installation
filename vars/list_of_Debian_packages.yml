@@ -9,6 +9,10 @@ list_of_browser_packages:
   - firefox
   - qutebrowser
 
+list_of_browser_snap_packages:
+  - chromium
+  - chromium-ffmpeg
+
 list_of_essential_packages:
   - bash-completion
   - build-essential
@@ -23,6 +27,10 @@ list_of_essential_packages:
   - vifm
   - zip
 
+list_of_essential_snap_packages:
+  - alacritty
+  - nvim
+
 list_of_multimedia_packages:
   - digikam
   - mpv
@@ -34,6 +42,13 @@ list_of_multimedia_packages:
   - zathura-djvu
   - zathura-pdf-poppler
   - zathura-ps
+
+list_of_ueberzug_dependencies:
+  - libx11-dev
+  - libxext-dev
+
+list_of_multimedia_pip_packages:
+  - ueberzug
 
 list_of_network_packages:
   - inetutils*
@@ -56,18 +71,3 @@ list_of_python_packages:
 list_of_x_related_packages:
   - xmobar
   - xorg
-
-list_of_essential_snap_packages:
-  - alacritty
-  - nvim
-
-list_of_browser_snap_packages:
-  - chromium
-  - chromium-ffmpeg
-
-list_of_multimedia_pip_packages:
-  - ueberzug
-
-list_of_ueberzug_dependencies:
-  - libx11-dev
-  - libxext-dev
