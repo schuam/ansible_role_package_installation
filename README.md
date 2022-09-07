@@ -1,19 +1,19 @@
 # Ansible Role: Package Installation
 
-This role can be used to install a bunch of packages on different linux
-distributions (so far Arch Linux and Ubuntu). I use is as part of my
+This role can be used to install a bunch of packages on different Linux
+distributions (so far Arch Linux and Ubuntu). I use it as part of my
 laptop/desktop setup process. This way the same software packages are installed
 on all my machines. Well, actually depending on what I use a specific computer
 for, I install different sets of packages. That's why I split all packages up
 into groups:
 
 - **bluetooth**: Packages needed to use Bluetooth.
-- **browser**: Some browser that I like to use. Either for day-to-day use or
+- **browser**: Some browsers that I like to use. Either for day-to-day use or
   for testing.
 - **essential**: Packages that I pretty much need on every machine that I work
   on (e.g. neovim, or git).
 - **multimedia**: Packages to work with different media files (e.g. music
-  player, or image viewer)
+  players, or image viewers)
 - **network**: Packages needed for networking.
 - **python**: Python packages that I want to have installed system wide. I
   don't like to install them with **pip** (I use pip only for virtual
@@ -22,8 +22,7 @@ into groups:
 - **x_related**: Packages related to the X server. Of corse **xorg** itself,
   but also for example **xmobar** that I use in my **xmonad** configuration.
 
-
-So far it has only be tried on two virtual (vagrant) machines. There hasn't
+So far it has only be tried on two virtual (Vagrant) machines. There hasn't
 been any real testing. If I find the time to really test everything, I will do
 that, but for now, I just use it as it is.
 
@@ -31,10 +30,11 @@ that, but for now, I just use it as it is.
 ## Requirements
 
 This role was written to setup Arch Linux and Ubuntu machine. I would think it
-should work on Debian as well, but I haven't tried. If you use it on an Arch
-machine **pacman** needs to be installed; if you use it on Ubuntu **apt** has
-to be installed. Well, I guess there is actually no need to mention that,
-because these are the default packages managers in those distros.
+should also work any other Arch- or Debian-based distro as well, but I haven't
+tried. If you use it on an Arch machine **pacman** needs to be installed; if
+you use it on Ubuntu **apt** has to be installed. Well, I guess there is
+actually no need to mention that, because these are the default packages
+managers in those distros.
 
 
 ## Role Variables
@@ -42,11 +42,11 @@ because these are the default packages managers in those distros.
 The following variable is in vars/main.yml:
 
 - package_types: It's a list of the different package types that I defined to
-  group packages together by a common subject.
+  group packages together by a common subject (s. above).
 
 The following variables are in vars/list\_of\_{{ ansible_os_family }}\_packages.yml.
-They each define a list of packages that I wanted to have for each type defined
-in package\_types.
+They each define a list of distro depended packages that I wanted to have for
+each type defined in package\_types.
 
 - list_of_bluetooth_packages
 - list_of_browser_packages
