@@ -27,6 +27,12 @@
     loop_var: type
   become: true
 
+- name: Make sure snapd is installed
+  ansible.builtin.apt:
+    name: snapd
+    state: present
+  become: true
+
 - name: Make sure snapd is started
   ansible.builtin.service:
     name: snapd
