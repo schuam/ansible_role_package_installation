@@ -6,6 +6,9 @@ list_of_ansible_packages:
   - docker
   - molecule
   - molecule-docker
+  - vagrant
+  - virtualbox
+  - virtualbox-guest-iso
   - yamllint
 
 list_of_bluetooth_packages:
@@ -18,43 +21,88 @@ list_of_browser_packages:
   - firefox
   - qutebrowser
 
+list_of_development_packages:
+  - cmake
+  - cppcheck
+  - ctags
+  - make
+  - meld
+  - uncrustify
+
+list_of_email_packages:
+  - thunderbird
+
 list_of_essential_packages:
   - alacritty
   - base-devel
   - bash-completion
+  - fzf
   - git
   - gzip
   - make
   - neovim
+  - perl-rename
   - python-pynvim
   - tmux
+  - udiskie
   - unzip
   - vifm
   - zip
 
+list_of_font_packages:
+  - ttf-dejavu
+  - ttf-font-awesome
+  - noto-fonts
+  - noto-fonts-emoji
+
 list_of_multimedia_packages:
   - digikam
+  - feh
   - mpv
   - pavucontrol
   - pulseaudio
   - pulseaudio-alsa
   - pulseaudio-bluetooth
+  - scrot
   - sxiv
   - ueberzug
+  - yt-dlp
   - zathura
   - zathura-djvu
   - zathura-pdf-poppler
   - zathura-ps
 
 list_of_network_packages:
+  # The notification-daemon is needed for nm-applet. Without it the applet
+  # might become unresponsive.
+  - filezilla
   - inetutils
+  - iproute2
   - network-manager-applet
   - networkmanager
   - networkmanager-openvpn
+  - nm-connection-editor
+  - nmap
+  - notification-daemon
   - openssh
+  - wireshark-qt
+
+list_of_nice_to_have_packages:
+  - light
+  - lxappearance-gtk3
+  - pcmanfm-gtk3
+  - qalculate-gtk
+  - sqlitebrowser
+
+list_of_office_packages:
+  - biber
+  - libreoffice-still
+  - pandoc
+  - texlive-most
 
 list_of_python_packages:
   - python-black
+  - python-cookiecutter
   - python-matplotlib
   - python-netaddr
   - python-numpy
@@ -65,7 +113,27 @@ list_of_python_packages:
   - python-xvfbwrapper
   - python-yaml
 
+list_of_secret_packages:
+  - gnome-keyring
+  - keepassxc
+  - pass
+  - seahorse
+
+list_of_virtualization_packages:
+  - docker
+  - vagrant
+  - virtualbox
+  - virtualbox-guest-iso
+
 list_of_x_related_packages:
+  - arandr
+  - nitrogen
+  - numlockx
+  - picom
+  - trayer
+  - xbindkeys
+  - xclip
   - xmobar
   - xmonad
   - xorg
+  - xss-lock

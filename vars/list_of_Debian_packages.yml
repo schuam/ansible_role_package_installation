@@ -2,6 +2,11 @@
 list_of_ansible_packages:
   - ansible
   - ansible-lint
+  - vagrant
+  - virtualbox
+  - virtualbox-dkms
+  - virtualbox-guest-additions-iso
+  - virtualbox-qt
   - yamllint
 
 list_of_ansible_pip_packages:
@@ -22,16 +27,32 @@ list_of_browser_snap_packages:
   - chromium
   - chromium-ffmpeg
 
+list_of_development_packages:
+  - cmake
+  - cppcheck
+  - make
+  - meld
+  - uncrustify
+
+list_of_development_snap_packages:
+  - universal-ctags
+
+list_of_email_packages:
+  - thunderbird
+
 list_of_essential_packages:
   - bash-completion
   - build-essential
+  - fzf
   - git
   - gzip
   - make
   - python3-setuptools
   - python3-pip
   - python3-pynvim
+  - rename
   - tmux
+  - udiskie
   - unzip
   - vifm
   - zip
@@ -40,13 +61,19 @@ list_of_essential_snap_packages:
   - alacritty
   - nvim
 
+list_of_font_packages:
+  - fonts-font-awesome
+
 list_of_multimedia_packages:
   - digikam
+  - feh
   - mpv
   - pavucontrol
   - pulseaudio
   - pulseaudio-module-bluetooth
+  - scrot
   - sxiv
+  - yt-dlp
   - zathura
   - zathura-djvu
   - zathura-pdf-poppler
@@ -60,14 +87,31 @@ list_of_multimedia_pip_packages:
   - ueberzug
 
 list_of_network_packages:
+  - filezilla
   - inetutils*
   - network-manager
   - network-manager-gnome
   - network-manager-openvpn
+  - nmap
+  - wireshark
+
+list_of_nice_to_have_packages:
+  - light
+  - lxappearance
+  - pcmanfm
+  - galculator
+  - sqlitebrowser
+
+list_of_office_packages:
+  - biber
+  - libreoffice
+  - pandoc
+  - texlive-full
 
 list_of_python_packages:
   - black
   - pylint
+  - python3-cookiecutter
   - python3-matplotlib
   - python3-netaddr
   - python3-numpy
@@ -77,6 +121,27 @@ list_of_python_packages:
   - python3-xvfbwrapper
   - python3-yaml
 
+list_of_secret_packages:
+  - gnome-keyring
+  - keepassxc
+  - pass
+  - seahorse
+
+list_of_virtualization_packages:
+  - vagrant
+  - virtualbox
+  - virtualbox-dkms
+  - virtualbox-guest-additions-iso
+  - virtualbox-qt
+
 list_of_x_related_packages:
+  - arandr
+  - nitrogen
+  - numlockx
+  - picom
+  - trayer
+  - xbindkeys
+  - xclip
   - xmobar
   - xorg
+  - xss-lock

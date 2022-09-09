@@ -3,8 +3,15 @@ package_types:
   - ansible
   - bluetooth
   - browser
+  - development
+  - email
   - essential
+  - font
   - multimedia
   - network
+  - nice_to_have
+  - office
   - python
+  - secret
+  - virtualization
   - x_related
