@@ -15,7 +15,11 @@ install_secret_packages: true
 install_virtualization_packages: true
 install_x_related_packages: true
 
-# The following variables are relevant for Ubuntu Usually I would say that if
+# Which kind of graphics card is installed [intel | amdgpu]. This is needed to
+# install the right driver.
+graphics_card_type: "intel"
+
+# The following variables are relevant for Ubuntu. Usually I would say that if
 # you want to install the browser, development, and/or essential packages,
 # brower snap and/or essetial snap packages should be installed as well. But
 # I'm not sure, if I want to install snap packages on all my systems, therefore
