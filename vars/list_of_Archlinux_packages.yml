@@ -88,10 +88,15 @@ list_of_network_packages:
   - wireshark-qt
 
 list_of_nice_to_have_packages:
+  - arc-gtk-theme
+  - breeze
+  - breeze-gtk
+  - kvantum
   - light
-  - lxappearance-gtk3
+  - lxappearance
   - pcmanfm-gtk3
   - qalculate-gtk
+  - qt5ct
   - sqlitebrowser
 
 list_of_office_packages:
@@ -133,7 +138,10 @@ list_of_x_related_packages:
   - trayer
   - xbindkeys
   - xclip
+  - xf86-video-{{ graphics_card_type }}
   - xmobar
   - xmonad
+  - xmonad-contrib
   - xorg
+  - xorg-xinit
   - xss-lock
