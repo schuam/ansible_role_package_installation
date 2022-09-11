@@ -19,7 +19,7 @@ install_x_related_packages: true
 # install the right driver.
 graphics_card_type: "intel"
 
-# The following variables are relevant for Ubuntu Usually I would say that if
+# The following variables are relevant for Ubuntu. Usually I would say that if
 # you want to install the browser, development, and/or essential packages,
 # brower snap and/or essetial snap packages should be installed as well. But
 # I'm not sure, if I want to install snap packages on all my systems, therefore
