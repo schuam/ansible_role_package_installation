@@ -43,6 +43,8 @@ list_of_essential_packages:
   - neovim
   - perl-rename
   - python-pynvim
+  - tig
+  - tk
   - tmux
   - udiskie
   - unzip
@@ -92,6 +94,7 @@ list_of_nice_to_have_packages:
   - breeze
   - breeze-gtk
   - kvantum
+  - mlocate
   - light
   - lxappearance
   - pcmanfm-gtk3
