@@ -25,5 +25,5 @@ graphics_card_type: "intel"
 # I'm not sure, if I want to install snap packages on all my systems, therefore
 # I let the choice to do so in here.
 install_browser_snap_packages: true
-list_of_development_snap_packages: true
+install_development_snap_packages: true
 install_essential_snap_packages: true
