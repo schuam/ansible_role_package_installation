@@ -9,6 +9,7 @@ list_of_ansible_packages:
   - vagrant
   - virtualbox
   - virtualbox-guest-iso
+  - virtualbox-host-modules-arch
   - yamllint
 
 list_of_bluetooth_packages:
