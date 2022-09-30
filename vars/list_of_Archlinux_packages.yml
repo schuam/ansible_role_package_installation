@@ -94,6 +94,7 @@ list_of_nice_to_have_packages:
   - arc-gtk-theme
   - breeze
   - breeze-gtk
+  - htop
   - kvantum
   - mlocate
   - light
