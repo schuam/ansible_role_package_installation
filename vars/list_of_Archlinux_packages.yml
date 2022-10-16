@@ -78,6 +78,7 @@ list_of_multimedia_packages:
 list_of_network_packages:
   # The notification-daemon is needed for nm-applet. Without it the applet
   # might become unresponsive.
+  - dnsutils
   - filezilla
   - inetutils
   - iproute2
