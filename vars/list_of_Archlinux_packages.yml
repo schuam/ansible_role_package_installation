@@ -89,6 +89,7 @@ list_of_network_packages:
   - nmap
   - notification-daemon
   - openssh
+  - wget
   - wireshark-qt
 
 list_of_nice_to_have_packages:
