@@ -61,6 +61,7 @@ list_of_font_packages:
 list_of_multimedia_packages:
   - digikam
   - feh
+  - gimp
   - mpv
   - pavucontrol
   - pulseaudio
