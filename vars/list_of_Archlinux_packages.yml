@@ -42,6 +42,7 @@ list_of_essential_packages:
   - gzip
   - make
   - neovim
+  - npm
   - perl-rename
   - python-pynvim
   - tig

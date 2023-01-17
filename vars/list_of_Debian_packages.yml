@@ -93,6 +93,8 @@ list_of_network_packages:
   - network-manager-gnome
   - network-manager-openvpn
   - nmap
+  - openssh-server
+  - openssh-client
   - wireshark
 
 list_of_nice_to_have_packages:
