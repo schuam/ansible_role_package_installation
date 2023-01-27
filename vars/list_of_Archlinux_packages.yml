@@ -6,6 +6,7 @@ list_of_ansible_packages:
   - docker
   - molecule
   - molecule-docker
+  - packer
   - vagrant
   - virtualbox
   - virtualbox-guest-iso
