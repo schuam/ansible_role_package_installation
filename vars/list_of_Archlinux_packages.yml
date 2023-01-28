@@ -46,6 +46,7 @@ list_of_essential_packages:
   - npm
   - perl-rename
   - python-pynvim
+  - ripgrep
   - tig
   - tk
   - tmux
