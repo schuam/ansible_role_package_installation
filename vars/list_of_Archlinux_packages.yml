@@ -5,7 +5,7 @@ list_of_ansible_packages:
   - ansible-lint
   - docker
   - molecule
-  - molecule-docker
+  - molecule-plugins
   - packer
   - vagrant
   - virtualbox
@@ -64,6 +64,7 @@ list_of_font_packages:
 list_of_multimedia_packages:
   - digikam
   - feh
+  - foliate
   - gimp
   - mpv
   - pavucontrol
@@ -143,6 +144,8 @@ list_of_virtualization_packages:
   - vagrant
   - virtualbox
   - virtualbox-guest-iso
+  - podman
+  - fuse-overlayfs
 
 list_of_x_related_packages:
   - arandr
