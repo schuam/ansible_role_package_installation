@@ -26,8 +26,3 @@
   loop_control:
     loop_var: type
   become: true
-
-- name: Recompile xmonad
-  ansible.builtin.shell: xmonad --recompile
-  become: false
-  changed_when: false
