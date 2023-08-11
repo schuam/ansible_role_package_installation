@@ -74,6 +74,7 @@ list_of_multimedia_packages:
   - scrot
   - sxiv
   - ueberzug
+  - v4l-utils
   - yt-dlp
   - zathura
   - zathura-djvu
@@ -118,7 +119,7 @@ list_of_office_packages:
   - biber
   - libreoffice-still
   - pandoc
-  - texlive-most
+  - texlive
 
 list_of_python_packages:
   - python-black
