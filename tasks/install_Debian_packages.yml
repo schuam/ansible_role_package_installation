@@ -22,6 +22,12 @@
       'install_' + type + '_packages',
       default='false'
     ) is truthy(convert_bool=True)
+    and
+    lookup(
+      'ansible.builtin.vars',
+      'list_of_' + type + '_packages',
+      default=''
+    ) | length > 0
   loop: "{{ package_types }}"
   loop_control:
     loop_var: type

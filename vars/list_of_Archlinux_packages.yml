@@ -31,6 +31,9 @@ list_of_development_packages:
   - meld
   - uncrustify
 
+list_of_driver_packages:
+  - xf86-video-{{ graphics_card_type }}
+
 list_of_email_packages:
   - thunderbird
 
@@ -156,10 +159,10 @@ list_of_x_related_packages:
   - trayer
   - xbindkeys
   - xclip
-  - xf86-video-{{ graphics_card_type }}
   - xmobar
   - xmonad
   - xmonad-contrib
   - xorg
   - xorg-xinit
   - xss-lock
+
