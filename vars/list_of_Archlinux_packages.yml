@@ -22,6 +22,7 @@ list_of_browser_packages:
   - chromium
   - firefox
   - qutebrowser
+  - w3m
 
 list_of_development_packages:
   - cmake
@@ -35,6 +36,7 @@ list_of_driver_packages:
   - xf86-video-{{ graphics_card_type }}
 
 list_of_email_packages:
+  - abook
   - afew
   - isync
   - msmtp
@@ -46,6 +48,7 @@ list_of_essential_packages:
   - alacritty
   - base-devel
   - bash-completion
+  - dos2unix
   - fzf
   - git
   - gzip
