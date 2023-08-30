@@ -114,6 +114,8 @@ list_of_nice_to_have_packages:
   - breeze
   - breeze-gtk
   - docker-compose
+  - gnome-themes-extra
+  - gtk-engine-murrine
   - gvfs-mtp
   - htop
   - kvantum
