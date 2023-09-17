@@ -36,7 +36,6 @@ list_of_driver_packages:
   - xf86-video-{{ graphics_card_type }}
 
 list_of_email_packages:
-  - abook
   - afew
   - isync
   - msmtp
