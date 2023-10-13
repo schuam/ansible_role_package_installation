@@ -28,8 +28,11 @@ list_of_development_packages:
   - cmake
   - cppcheck
   - ctags
+  - dosfstools
   - make
   - meld
+  - minicom
+  - moserial
   - uncrustify
 
 list_of_driver_packages:
@@ -41,7 +44,6 @@ list_of_email_packages:
   - msmtp
   - neomutt
   - notmuch
-  - thunderbird
 
 list_of_essential_packages:
   - alacritty
