@@ -98,6 +98,7 @@ list_of_network_packages:
   # might become unresponsive.
   - dnsutils
   - filezilla
+  - gufw
   - inetutils
   - iproute2
   - network-manager-applet
