@@ -107,6 +107,7 @@ list_of_network_packages:
   - nmap
   - notification-daemon
   - openssh
+  - ufw
   - wget
   - wireshark-qt
 
