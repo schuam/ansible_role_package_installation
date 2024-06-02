@@ -66,6 +66,8 @@ list_of_essential_snap_packages:
 list_of_font_packages:
   - fonts-font-awesome
 
+list_of_language_server_packages: {}
+
 list_of_multimedia_packages:
   - digikam
   - feh

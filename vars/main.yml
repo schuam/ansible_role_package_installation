@@ -8,6 +8,7 @@ package_types:
   - email
   - essential
   - font
+  - language_server
   - multimedia
   - network
   - nice_to_have

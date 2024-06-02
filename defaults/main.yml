@@ -7,6 +7,7 @@ install_driver_packages: true
 install_email_packages: true
 install_essential_packages: true
 install_font_packages: true
+install_language_server_packages: true
 install_multimedia_packages: true
 install_network_packages: true
 install_nice_to_have_packages: true

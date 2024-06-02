@@ -73,6 +73,17 @@ list_of_font_packages:
   - noto-fonts
   - noto-fonts-emoji
 
+list_of_language_server_packages:
+  - ansible-language-server
+  - bash-language-server
+  - clang
+  - dot-language-server
+  - lua-language-server
+  - vscode-html-languageserver
+  - vscode-json-languageserver
+  - pyright
+  - yaml-language-server
+
 list_of_multimedia_packages:
   - digikam
   - feh
