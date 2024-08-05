@@ -35,6 +35,10 @@ list_of_development_packages:
   - moserial
   - uncrustify
 
+list_of_dotnet_packages:
+  - dotnet-runtime
+  - dotnet-sdk
+
 list_of_driver_packages:
   - xf86-video-{{ graphics_card_type }}
 

@@ -4,6 +4,7 @@ package_types:
   - bluetooth
   - browser
   - development
+  - dotnet
   - driver
   - email
   - essential

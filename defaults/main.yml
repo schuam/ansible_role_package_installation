@@ -3,6 +3,7 @@ install_ansible_packages: true
 install_bluetooth_packages: true
 install_browser_packages: true
 install_development_packages: true
+install_dotnet_packages: true
 install_driver_packages: true
 install_email_packages: true
 install_essential_packages: true
